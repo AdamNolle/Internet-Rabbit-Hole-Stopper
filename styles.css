@@ -1,0 +1,72 @@
+/* styles.css */
+#internet-rabbithole-stopper-warning {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(240, 253, 244, 0.95); /* Light green tint */
+    backdrop-filter: blur(5px);
+    z-index: 2147483647; /* Max z-index */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', -apple-system, sans-serif;
+    color: #166534;
+}
+
+#internet-rabbithole-stopper-warning .irhs-modal {
+    background-color: #ffffff;
+    border: 3px solid #4ade80; /* Nature green */
+    border-radius: 16px;
+    padding: 50px 40px;
+    text-align: center;
+    max-width: 500px;
+    box-shadow: 0 10px 40px rgba(34, 197, 94, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+#internet-rabbithole-stopper-warning .irhs-modal::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(90deg, #3b82f6, #22c55e); /* Blue to Green */
+}
+
+#internet-rabbithole-stopper-warning h1 {
+    color: #15803d;
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+#internet-rabbithole-stopper-warning p {
+    font-size: 18px;
+    margin-bottom: 35px;
+    color: #16a34a;
+    line-height: 1.5;
+}
+
+#internet-rabbithole-stopper-warning .irhs-btn {
+    background-color: #22c55e;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 6px rgba(34, 197, 94, 0.3);
+}
+
+#internet-rabbithole-stopper-warning .irhs-btn:hover {
+    background-color: #16a34a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(34, 197, 94, 0.4);
+}

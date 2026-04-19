@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Internet Rabbit Hole Stopper</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="header">
+        <img src="icons/icon128.png" alt="Logo" class="logo">
+        <h2>Rabbit Hole Stopper</h2>
+    </div>
+
+    <div class="status-box">
+        <h3>Rabbit Hole Gravity</h3>
+        <div class="progress-bar-container">
+            <div class="progress-bar" id="score-progress"></div>
+        </div>
+        <div class="depth-indicator">
+            <span id="depth-count">0</span> / <span id="threshold-count">10</span>
+        </div>
+        <p>in the last 15 minutes</p>
+
+        <div class="algorithm-readout">
+            <h4>Live Algorithm Judgment:</h4>
+            <p id="reason-text">Evaluating behavior...</p>
+        </div>
+    </div>
+
+    <div class="actions">
+        <button id="view-path-btn" class="btn primary">View My Path</button>
+    </div>
+
+    <div class="footer">
+        <a href="#" id="options-link">Settings</a>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

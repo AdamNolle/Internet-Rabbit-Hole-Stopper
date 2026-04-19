@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Rabbit Hole Config</title>
+    <link rel="stylesheet" href="options.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Internet Rabbit Hole Config</h1>
+
+        <div class="setting-group checkbox-group">
+            <input type="checkbox" id="persistent-storage">
+            <div class="checkbox-label">
+                <label for="persistent-storage">Keep rabbit hole sessions persistently</label>
+                <p class="description">Enable to keep memory of your paths across browser restarts.</p>
+            </div>
+        </div>
+        
+        <div class="setting-group">
+            <label for="aggressiveness">Aggressiveness: <span id="agg-value">5</span></label>
+            <p class="description">1 = Very slow to detect, 10 = Detects rabbit holes immediately</p>
+            <div class="slider-wrapper">
+                <span class="limit">1</span>
+                <input type="range" id="aggressiveness" min="1" max="10" value="5">
+                <span class="limit">10</span>
+            </div>
+            <div class="sensitivity-explanation" id="agg-explanation">
+                Loading algorithm heuristics...
+            </div>
+        </div>
+
+        <button id="save-btn">Save Settings</button>
+        <span id="status"></span>
+    </div>
+
+    <script src="options.js"></script>
+</body>
+</html>
